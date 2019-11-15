@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	</title>
+</head>
+<body>
+<table>
+	<tr>
+		<td><button type="button" onclick="onclick1()"><p id="btn1"></p></button></td>
+		<td><button type="button" onclick="onclick2()"><p id="btn2"></p></button></td>
+		<td><button type="button" onclick="onclick3()"><p id="btn3"></p></button></td>
+	</tr>
+	<tr>
+		<td><button type="button" onclick="onclick4()"><p id="btn4"></p></button></td>
+		<td><button type="button" onclick="onclick5()"><p id="btn5"></p></button></td>
+		<td><button type="button" onclick="onclick6()"><p id="btn6"></p></button></td>
+	</tr>
+	<tr>
+		<td><button type="button" onclick="onclick7()"><p id="btn7"></p></button></td>
+		<td><button type="button" onclick="onclick8()"><p id="btn8"></p></button></td>
+		<td><button type="button" onclick="onclick9()"><p id="btn9"></p></button></td>
+	</tr>
+</table>
+
+<script type="text/javascript">
+	function checkXO(){
+		var check=0;
+		if(check % 2 ==0){
+			return "X";}
+	    else{
+			return "O"
+			}
+	function onclick1(){
+		document.getElementById("btn1").innerHTML=checkXO();
+		check=check+1;
+	}	
+	function onclick2(){
+		document.getElementById("btn2").innerHTML=checkXO();
+		check=check+1;
+	}	
+	function onclick3(){
+		document.getElementById("btn3").innerHTML=checkXO();
+		check=check+1;
+	}	
+	
+</script>
+
+</body>
+</html>

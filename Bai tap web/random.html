@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		// console.log(Math.floor(Math.random(	)*21));
+
+
+		function random1() {
+			  var ran = "";
+			  var possible = "1234567890";
+
+			  for (var i = 0; i < 5; i++)
+			    ran += possible.charAt(Math.floor(Math.random() * possible.length));
+
+			  return ran;
+			}
+
+		console.log(random1());
+	</script>
+
+
+
+
+</body>
+</html>

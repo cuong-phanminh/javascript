@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+</head>
+
+<body>
+
+	<button onclick="btn1()">1</button>
+	<button onclick="btn2()">2</button>
+	<!-- <button onclick="btn2()">3</button>
+	<button onclick="btn2()">4</button>
+	<button onclick="btn2()">5</button> -->
+	<ul id="list">
+
+	</ul>
+
+	<!-- <div id = "list"></div>
+	<script type="text/javascript">
+	var number = 100;
+	var check = "next";
+	var current = 0;
+	for(var i=0; i< number/10; i++){
+	var b = document.createElement("LI");
+	b.innerText = i + "A";
+	document.getElementById("list").appendChild(b);
+	}
+	
+	function next(){
+	document.getElementById("list").innerHTML = "";
+	current++;
+	for(var i= current * (number/10); i < current * (number/10) + 10 ; i++){
+	var b = document.createElement("LI");
+	b.innerText = i + "A";
+	document.getElementById("list").appendChild(b);
+	}
+	
+	}
+	
+	function previous(){
+	document.getElementById("list").innerHTML = "";
+	current --;
+	for(var i= current * (number/10) - 10; i < current * (number/10) ; i++){
+	var b = document.createElement("LI");
+	b.innerText = i + "A";
+	document.getElementById("list").appendChild(b);
+	}
+	
+	}
+	
+	</script> -->
+
+
+	<script type="text/javascript">
+		var number = 20;
+		function btn1() {
+			diplay(1, 10);
+
+		}
+		function btn2() {
+			diplay(10, 20);
+		}
+
+		function diplay(start, end) {
+			var a = "A";
+			for (var i = start + 1; i <= end; i++) {
+				var note = document.createElement("LI");
+				var textNote = document.createTextNode(a.concat(" ", i));
+				note.appendChild(textNote);
+				document.getElementById("list").appendChild(note);
+			}
+		}
+
+
+	</script>
+</body>
+
+</html>

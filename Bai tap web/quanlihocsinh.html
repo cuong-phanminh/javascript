@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+User:
+<input type="text" name="name" id="txtname" />
+<input type="text" name="name" id="txtdiem" />
+
+    <buton type="button" onclick="gettext()">Ok </button>
+
+    	<table style="width:50%">
+
+		  <tr>
+		  	<th><p id="u"></p></th>
+		    <th><p id="d"></p></th>
+		    
+		  </tr>
+		  <tr>
+		    
+		  </tr>
+		  
+		</table>
+        
+        
+        
+
+
+<script type="text/javascript">
+
+        function gettext(){
+        var txtname = document.getElementById("txtname").value;
+        document.getElementById("u").innerHTML+=txtname + "<br/>" +"<hr/>";
+
+        var txtdiem = document.getElementById("txtdiem").value;
+        document.getElementById("d").innerHTML+=txtdiem + "<br/>"+"<hr/>";
+
+        
+
+
+        }
+</script>
+
+</body>
+</html>

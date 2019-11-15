@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+   <input type="text" id="numberA" name="">
+   <input type="text" id="numberB" name="">
+   <input type="text" id="result1" name="">
+
+
+   <button onclick="onSumClick()">+</button>
+   <button onclick="onTruClick()">-</button>
+   <button onclick="onNhanClick()">*</button>
+   <button onclick="onChiaClick()">/</button>
+
+
+
+   <script type="text/javascript">
+
+function d(){
+	displayResult(getNumberA()+getNumberB())
+}
+
+   	function onSumClick() {
+   		var numberA=parseInt(document.getElementById("numberA").value);
+   		var numberB=parseInt(document.getElementById("numberB").value);
+   		var result1=document.getElementById("result1").value+=numberA;
+   		var result1=document.getElementById("result1").value+="+";
+   		var result1=document.getElementById("result1").value+=numberB;
+   		var result1=document.getElementById("result1").value+="=";
+   		var result1=document.getElementById("result1").value+=numberA+numberB;
+   		document.getElementById("result2").innerHTML=sum;
+   	}
+   	function onTruClick() {
+   		var numberA=parseInt(document.getElementById("numberA").value);
+   		var numberB=parseInt(document.getElementById("numberB").value);
+   		var result1=document.getElementById("result1").value+=numberA;
+   		var result1=document.getElementById("result1").value+="-";
+   		var result1=document.getElementById("result1").value+=numberB;
+   		var result1=document.getElementById("result1").value+="=";
+   		var result1=document.getElementById("result1").value+=numberA+numberB;
+   	}
+   	function onNhanClick() {
+   		var numberA=parseInt(document.getElementById("numberA").value);
+   		var numberB=parseInt(document.getElementById("numberB").value);
+   		var result1=document.getElementById("result1").value+=numberA;
+   		var result1=document.getElementById("result1").value+="x";
+   		var result1=document.getElementById("result1").value+=numberB;
+   		var result1=document.getElementById("result1").value+="=";
+   		var result1=document.getElementById("result1").value+=numberA+numberB;
+   	}
+   	function onChiaClick() {
+   		var numberA=parseInt(document.getElementById("numberA").value);
+   		var numberB=parseInt(document.getElementById("numberB").value);
+   		var result1=document.getElementById("result1").value+=numberA;
+   		var result1=document.getElementById("result1").value+="/";
+   		var result1=document.getElementById("result1").value+=numberB;
+   		var result1=document.getElementById("result1").value+="=";
+   		var result1=document.getElementById("result1").value+=numberA+numberB;
+   	}
+   
+
+   </script>
+</body>
+</html>
